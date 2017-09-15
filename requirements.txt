@@ -4,3 +4,4 @@ git+git://github.com/grnhse/boto.git@develop#egg=boto
 boto3==1.4
 jinja2==2.8.1
 nsone==0.9.9
+requests
