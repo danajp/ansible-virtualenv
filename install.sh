@@ -2,8 +2,8 @@
 
 set -eo pipefail
 
-CT_VERSION=0.4.1
-CT_URL=${CT_URL:-https://github.com/coreos/container-linux-config-transpiler/releases/download/v0.3.1/ct-v${CT_VERSION}-x86_64-unknown-linux-gnu}
+CT_VERSION=0.5.0
+CT_URL=${CT_URL:-https://github.com/coreos/container-linux-config-transpiler/releases/download/v${CT_VERSION}/ct-v${CT_VERSION}-x86_64-unknown-linux-gnu}
 VIRTUALENV_NAME=${VIRTUALENV_NAME:-ansible}
 
 msg() {
@@ -51,7 +51,7 @@ main() {
   pip install --upgrade -r requirements.txt
 
   msg "Installing ct"
-  curl -s "$CT_URL" > "${VIRTUAL_ENV}/bin/ct"
+  curl -sSL "$CT_URL" > "${VIRTUAL_ENV}/bin/ct"
   chmod +x "${VIRTUAL_ENV}/bin/ct"
 }
 
