@@ -1,4 +1,4 @@
-git+git://github.com/ansible/ansible.git@devel#egg=ansible
+ansible==2.4.2
 git+git://github.com/sczizzo/botocore.git@develop#egg=botocore
 git+git://github.com/grnhse/boto.git@develop#egg=boto
 boto3~=1.4
