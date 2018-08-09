@@ -2,7 +2,7 @@
 
 set -eo pipefail
 
-CT_VERSION=0.5.0
+CT_VERSION=0.9.0
 CT_URL=${CT_URL:-https://github.com/coreos/container-linux-config-transpiler/releases/download/v${CT_VERSION}/ct-v${CT_VERSION}-x86_64-unknown-linux-gnu}
 VIRTUALENV_NAME=${VIRTUALENV_NAME:-ansible}
 
